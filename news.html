@@ -31,8 +31,7 @@
                 <ul class="page-news__menu-list  main-nav__menu-list">
                     <li><a class="page-news__nav-link  main-nav__link" href="news.html">Новости и акции</a></li>
                     <li><a class="page-news__nav-link  main-nav__link" href="menu.html">Меню</a></li>
-                    <li><a class="page-news__nav-link  main-nav__link" href="index.html#gallery">Интерьер</a></li>
-                    <!-- <li><a class="page-news__nav-link  main-nav__link" href="vacancy.html">Вакансии</a></li> -->
+                    <li><a class="page-news__nav-link  main-nav__link" href="index.html#gallery">Галерея</a></li>
                     <li><a class="page-news__nav-link  main-nav__link" href="index.html#contacts">Контакты</a></li>
                 </ul>
             </div>
@@ -52,7 +51,7 @@
                 </div>
                 <button class="news-list__item-read-full  hidden" type="button">Читать полностью</button>
             </article>
-            <article class="news-list__item">
+            <article class="news-list__item" id="frendi3-03-18">
                 <div class="news-list__item-thumbnail">
                     <img src="img/frendi-logo.png"></div>
                 <div class="news-list__item-text-wrap">
@@ -65,7 +64,7 @@
                 </div>
                 <button class="news-list__item-read-full  hidden" type="button">Читать полностью</button>
             </article>
-            <article class="news-list__item">
+            <article class="news-list__item" id="art-idea">
                 <div class="news-list__item-thumbnail">
                     <img src="img/art-idea.png"></div>
                 <div class="news-list__item-text-wrap">
@@ -165,18 +164,6 @@
                 </div>
                 <button class="news-list__item-read-full  hidden" type="button">Читать полностью</button>
             </article>
-            <article class="news-list__item">
-                <div class="news-list__item-thumbnail">
-                    <img src="img/kupon.jpg"></div>
-                <div class="news-list__item-text-wrap">
-                    <h2 class="news-list__item-title">Акция на kupikupon.ru</h2>
-                    <p class="news-list__item-text">
-                        Ознакомиться с полными условиями акции и приобрести купон Вы можене на сайте организатора <a href="https://ekaterinburg.kupikupon.ru/deals/lukomorie-265887?utm_referrer=http%3a%2f%2fwww.lukomorie96.ru%2f#.WEmrp4VOKhc" target="_blank">kupikupon.ru</a>
-                        <p>*Купоны не действуют при заказе Новогоднего корпоратива.</p>
-                    <time class="news-list__item-date" datetime="2016-11-10">10 ноября 2016</time>
-                </div>
-                <button class="news-list__item-read-full  hidden" type="button">Читать полностью</button>
-            </article>  
         </section>
     </main>
     <footer class="main-footer">
@@ -190,7 +177,7 @@
                     <svg class="main-footer__contact-item-icon  contact-item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="30px" height="35px">
                             <use xlink:href="#mail"/></svg>
                     <span class="main-footer__contact-item-content  contact-item__content">kafe@lukomorie96.ru</span></a>
-                <p class="main-footer__address-text">г.Екатеринбург, ул.Старых большевиков, 77 <!--<a href="contacts.html">Смотреть на карте</a>--></p>
+                <p class="main-footer__address-text">г.Екатеринбург, ул.Старых большевиков, 77</p>
             </address>
             <section class="main-footer__working-hours  working-hours">
                 <h3 class="main-footer__working-hours-title  working-hours__title">График работы</h3>
@@ -229,12 +216,12 @@
                         <svg width="40" height="40" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#flamp"/>
                         </svg></a>
                 </section>
-                <p class="main-footer__copyright">©2016-2018 Кафе «Лукоморье»</p>
+                <p class="main-footer__copyright">©2015-2018 Кафе «Лукоморье»</p>
             </div>
         </div>
     </footer>
   
-    <div class="page-news__feedback-overlay  visually-hidden">
+    <div class="page-news__feedback-overlay  feedback-overlay  hidden">
         <section class="page-news__feedback  modal-feedback">
             <h3 class="page-news__feedback-title  modal-feedback__title">Напишите нам</h3>
             <p>Если у Вас остались вопросы, появились замечания о нашей работе, а также пожелания или предложения - Вы можете написать нам, используя форму ниже.</p>
@@ -248,7 +235,7 @@
                 <label for="feedback-message">Текст сообщения:</label>
                 <textarea class="page-news__feedback-field  modal-feedback__form-field" name="message" id="feedback-message" cols="30" rows="6"></textarea>
                 <button class="page-news__feedback-form-submit  modal-feedback__form-submit" type="submit">Отправить</button>
-                <button class="page-news__feedback-form-close  modal-feedback__form-close">
+                <button class="page-news__feedback-form-close  modal-feedback__form-close" type="reset">
                     <span class="visually-hidden">Закрыть форму обратной связи</span></button>
             </form>
         </section>

@@ -33,8 +33,7 @@
                     <li><a class="main-nav__link" href="#news">Новости и акции</a></li>
                     <li><a class="main-nav__link" href="#menu">Меню</a></li>
                     <li><a class="main-nav__link" href="#banquets">Банкеты</a></li>
-                    <li><a class="main-nav__link" href="#gallery">Интерьер</a></li>
-                    <!-- <li><a class="main-nav__link" href="vacancy.html">Вакансии</a></li> -->
+                    <li><a class="main-nav__link" href="#gallery">Галерея</a></li>
                     <li><a class="main-nav__link" href="#contacts">Контакты</a></li>
                 </ul>
             </div>
@@ -48,50 +47,56 @@
                     <h2>Новости и акции</h2>
                     <a href="news.html">Все акции и новости</a>
                 </header>
-                <button class="main-content__news-control  main-content__news-control--left"><span class="visually-hidden">Предыдущая новость</span></button>
-                <div class="main-content__news-list">
-                    <article><a class="main-content__news-item" href="news.html#lunch-action">
-                        <img src="img/lunch.png" width="380" height="265" alt="">
-                        <div class="main-content__news-list-text">
-                            <h3>Каждый 10-й бизнес-ланч в подарок</h3>
-                            <p>Получите карточку для отметок у официанта. Каждый раз при оплате бизнес-ланча на эту карту будет ставиться печать. Соберите 9 печатей и обменяйте карту на бесплатный бизнес-ланч.</p>
-                            <time datetime="2018-01-03">3 марта 2018</time>
-                        </div></a></article>
-                    <article><a class="main-content__news-item" href="news-and-action.html#news">
-                        <img src="img/new-2.jpg" width="500" height="288" alt="">
-                        <div class="main-content__news-list-text">
-                            <h3>Каждый 10-й бизнес-ланч в подарок</h3>
-                            <p>Получите карточку для отметок у официанта. Каждый раз при оплате бизнес-ланча на эту карту будет ставиться печать. Соберите 9 печатей и обменяйте карту на бесплатный бизнес-ланч.</p>
-                            <time datetime="2018-01-03">3 марта 2018</time>
-                        </div></a></article>
-                    <article><a class="main-content__news-item" href="news-and-action.html#news">
-                        <img src="img/new-1.jpg" width="500" height="288" alt="">
-                        <div class="main-content__news-list-text">
-                            <h3>Каждый 10-й бизнес-ланч в подарок</h3>
-                            <p>Получите карточку для отметок у официанта. Каждый раз при оплате бизнес-ланча на эту карту будет ставиться печать. Соберите 9 печатей и обменяйте карту на бесплатный бизнес-ланч.</p>
-                            <time datetime="2018-01-03">3 марта 2018</time>
-                        </div></a></article>
+                <button class="main-content__news-control  main-content__news-control--left" disabled><span class="visually-hidden">Предыдущая новость</span></button>
+                <div class="main-content__news-list-wrap"> 
+                    <div class="main-content__news-list">
+                        <article class="main-content__news-item" id="current-new"> 
+                            <img src="img/lunch.png" width="380" height="265" alt="Изображение печати на карточке бизнес-ланча">
+                            <div class="main-content__news-list-text">
+                                <a href="news.html#lunch-action"><h3>Каждый 10-й бизнес-ланч в подарок</h3></a>
+                                <p>Получите карточку для отметок у официанта. Каждый раз при оплате бизнес-ланча на эту карту будет ставиться печать. Соберите 9 печатей и обменяйте карту на бесплатный бизнес-ланч.</p>
+                                <time datetime="2018-04-08">8 апреля 2018</time>
+                            </div></article>
+                        <article class="main-content__news-item">
+                            <img src="img/frendi-logo.png" width="199" height="134" alt="Логотип friendi.ru">
+                            <div class="main-content__news-list-text">
+                                <a href="news.html#frendi3-03-18"><h3>Приобретите купон на ужин или банкет со скидкой до 55%</h3></a>
+                                <p>Условия проведения акции Вы можете узнать <a href="https://www.frendi.ru/deals/ekaterinburg-ujin-banket-lukomorie" target="_blank">на сайте организатора</a></p>
+                                <time datetime="2018-01-03">3 марта 2018</time>
+                            </div></article>
+                        <article class="main-content__news-item">
+                            <img src="img/art-idea.png" width="269" height="192" alt="Логотип Art-idea party">
+                            <div class="main-content__news-list-text">
+                                <a href="news.html#art-idea"><h3>АРТ-вечеринки!</h3></a>
+                                <p>Дорогие гости!
+                        Рады Вам сообщить, что у нас в кафе проводятся АРТ-вечеринки!
+                        Если Вы хотите разнообразить повседневную жизнь, внести в нее немного творчества, расслабиться и снять напряжение - будем рады увидеть Вас в гостях!
+                        АРТ-вечеринки проводят специалисты компании ART IDEA PARTY.
+                        Ознакомиться с датами проведения, стоимостью и получить подробную информацию о мероприятиях, Вы можете на <a href="http://artideaparty.ru/" target="_blank">сайте организатора</a></p>
+                                <time datetime="2018-02-01">1 февраля 2018</time>
+                            </div></article>
+                    </div>
                 </div>
                 <button class="main-content__news-control  main-content__news-control--right"><span class="visually-hidden">Следующая новость</span></button>
             </div>
         </section>
-        <div class="main-content__inner-wrap">
-            <h2 class="introduction__title">Добро пожаловать!</h2>
-            <section class="main-content__column main-content__column--bigger">
-                <p class="introduction__text">Среди многообразия кафе и ресторанов всегда хочется найти свое: уютное и гостеприимное,
-                такое, чтобы создавалось впечатление, что пришел в гости к друзьям, которые всегда тебе рады.</p>
-                <p class="introduction__text">Важно, чтобы кухня была вкусной, не из заморозки и полуфабрикатов, а домашней и только из свежих продуктов,
-                чтобы порции были большими, щедрыми, а цены приятными. Именно такая атмосфера царит в кафе Лукоморье.
-                Приходите и убедитесь в этом!</p>
-            </section>
-            <section class="main-content__column main-content__column--smaller">
-                <img src="img/furnace.jpg" width="365" height="282">
-            </section>
-        </div>
+        <section class="main-content__introduction">
+            <h2 class="main-content__introduction-title">Добро пожаловать!</h2>
+            <img class="main-content__introduction-img" src="img/furnace.jpg" width="365" height="282">
+            <p class="main-content__introduction-text">Среди многообразия кафе и ресторанов всегда хочется найти свое: уютное и гостеприимное,
+            такое, чтобы создавалось впечатление, что пришел в гости к друзьям, которые всегда тебе рады.</p>
+            <p class="main-content__introduction-text">Важно, чтобы кухня была вкусной, не из заморозки и полуфабрикатов, а домашней и только из свежих продуктов,
+            чтобы порции были большими, щедрыми, а цены приятными. Именно такая атмосфера царит в кафе Лукоморье.
+            Приходите и убедитесь в этом!</p>
+        </section>
         <section class="main-content__menu" id="menu">
             <div class="main-content__menu-container">
-                <h2 class="main-content__menu-title">Меню 
-            <a class="main-content__menu-full" href="menu.html">Перейти на страницу меню</a></h2>
+                <header class="main-content__menu-title">
+                    <h2>Меню</h2> 
+                    <a class="main-content__menu-full" href="menu.html">Перейти на страницу меню</a>
+                </header>
+                <p class="main-content__menu-text">В нашем меню представлены блюда русской и европейской кухни на любой вкус и кошелёк: легкие и сытные салаты; холодные и горячие закуски, в том числе большой выбор закусок к пиву; горячие блюда из мяса, птицы и рыбы различных видов; несколько видов пиццы и пасты. А также, десерты собственного приготовления, в том числе торты без выпечки на лёгком креме, специально для тех, кто следит за фигурой. Кроме того, мы предлагаем вам большой ассортимент кофе и кофейных напитков, а также обычные и авторские чаи с добавлением различных трав, фруктов и ягод: таких ароматных и богатых витаминами. А для больших компаний и банкетов, у нас разработано специальное банкетное меню.</p>
+                <p class="main-content__menu-text">Выбирайте с удовольствием!</p>
                 <a class="main-content__menu-link" href="menu.html#banquet-menu">
                     <img src="img/banquet-menu.jpg" width="250" height="125" alt="">
                     <h3>Банкетное меню</h3></a>
@@ -135,7 +140,10 @@
                 <h2>Проведение банкетов и мероприятий</h2>
                 <a href="menu.html#banquet-menu">Смотреть банкетное меню</a>
             </header>
-            <div class="main-content__banquets-column main-content__banquets-column--bigger">
+            <div class="main-content__banquets-img-wrap">
+                <img class="main-content__banquets-img" src="img/banquets.jpg">
+            </div>
+            <div class="main-content__banquets-text-block">
                 <p class="main-content__banquets-text">Кафе Лукоморье - уютное место для проведения праздника с домашней атмосферой и вкусной кухней.</p>
                 <ul class="main-content__banquets-features-list">
                     <li class="main-content__banquets-features-item">вместимость 60 - 72 человека;</li>
@@ -145,11 +153,11 @@
                     <li class="main-content__banquets-features-item">внимательный персонал;</li>
                     <li class="main-content__banquets-features-item">без  аренды.</li>
                 </ul>
-                <p class="main-content__banquets-text">Кафе Лукоморье - то самое место, где Вам помогут провести Ваш праздник не упустив ни одной детали, а интерьер заведения создаст атмосферу тепла и уюта.</p>
-                <p class="main-content__banquets-text">Меню торжества будет включать в себя вкусные блюда русско-европейской кухни: корейка ягненка, свиные ребрышки, медальоны из телятины, разнообразные салаты, закуски и многое другое.</p>
-            </div>
-            <div class="main-content__banquets-column main-content__banquets-column--smaller">
-                <img src="img/banquets.jpg">
+                <p class="main-content__banquets-text">
+                За несколько лет работы, мы успели провести множество юбилеев, дней рождения, свадебных банкетов, встреч одноклассников и успели накопить большой опыт проведения различных торжеств. Поэтому, мы знаем, как провести праздник не упустив ни малейшей детали.</p>
+                <p class="main-content__banquets-text">Конечно, каждое мероприятие, по-своему, уникально, поэтому, наши специалисты находят индивидуальный подход к каждому. Вам прежложат несколько вариантов размещения гостей в зале на выбор, составят несколько вариантов меню, основываясь на Ваших предпочтениях и пожеланиях. В том числе, по согласованию, мы можем приготовить для Вас блюда, которых нет у нас в меню, а также испечь вкусный и красивый торт из натуральных продуктов: без искуственных красителей и консервантов. Кроме того, в кафе играет живая музыка, а вокалист исполняет композиции на разных языках. При желании, Вы можете обговорить с ним детали музыкальной программы.</p>
+                <p class="main-content__banquets-text">
+                Все эти, и другие моменты, мы, с удовольствием, обговорим с Вами за чашечкой вкуснейшего чая или кофе. Будем рады видеть Вас у нас в гостях.</p>
             </div>
         </section>
         <section class="main-content__gallery" id="gallery">
@@ -158,18 +166,20 @@
                 <div class="main-content__gallery-preview-overlay  hidden">
                     <div class="main-content__gallery-preview">
                         <button class="main-content__gallery-preview-close" type="button"><span class="visually-hidden">Закрыть увеличенную фотографию</span></button>
-                        <img src="img/gallery-1.jpg" width="1000" height="576" alt="">
+                        <img src="" width="1000" height="576" alt="">
                     </div>
                 </div>
-                <button class="main-content__gallery-slider-control  main-content__gallery-slider-control--left"><span class="visually-hidden">Предыдущий слайд</span></button>
-                <ul class="main-content__gallery-slider-list">
-                    <li class="main-content__gallery-slider-item"><img src="img/gallery-1.jpg" width="500" height="288" alt="" tabindex="0"></li>
-                    <li class="main-content__gallery-slider-item"><img src="img/gallery-2.jpg" width="500" height="288" alt="" tabindex="0"></li>
-                    <li class="main-content__gallery-slider-item"><img src="img/gallery-3.jpg" width="500" height="288" alt="" tabindex="0"></li>
-                    <li class="main-content__gallery-slider-item"><img src="img/gallery-4.jpg" width="500" height="288" alt="" tabindex="0"></li>
-                    <li class="main-content__gallery-slider-item"><img src="img/gallery-5.jpg" width="500" height="288" alt="" tabindex="0"></li>
-                    <li class="main-content__gallery-slider-item"><img src="img/gallery-6.jpg" width="500" height="288" alt="" tabindex="0"></li>
-                </ul>
+                <button class="main-content__gallery-slider-control  main-content__gallery-slider-control--left" disabled><span class="visually-hidden">Предыдущий слайд</span></button>
+                <div class="main-content__gallery-slider-list-wrap">
+                    <ul class="main-content__gallery-slider-list">
+                        <li class="main-content__gallery-slider-item" id="current-img"><img src="img/gallery-1.jpg" width="500" height="288" alt="" tabindex="0"></li>
+                        <li class="main-content__gallery-slider-item"><img src="img/gallery-2.jpg" width="500" height="288" alt="" tabindex="0"></li>
+                        <li class="main-content__gallery-slider-item"><img src="img/gallery-3.jpg" width="500" height="288" alt="" tabindex="0"></li>
+                        <li class="main-content__gallery-slider-item"><img src="img/gallery-4.jpg" width="500" height="288" alt="" tabindex="0"></li>
+                        <li class="main-content__gallery-slider-item"><img src="img/gallery-5.jpg" width="500" height="288" alt="" tabindex="0"></li>
+                        
+                    </ul>
+                </div>
                 <button class="main-content__gallery-slider-control  main-content__gallery-slider-control--right"><span class="visually-hidden">Следующий слайд</span></button>
             </div>
         </section>
@@ -243,7 +253,7 @@
                     <svg class="main-footer__contact-item-icon  contact-item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="30px" height="35px">
                             <use xlink:href="#mail"/></svg>
                     <span class="main-footer__contact-item-content  contact-item__content">kafe@lukomorie96.ru</span></a>
-                <p class="main-footer__address-text">г.Екатеринбург, ул.Старых большевиков, 77 <!--<a href="contacts.html">Смотреть на карте</a>--></p>
+                <p class="main-footer__address-text">г.Екатеринбург, ул.Старых большевиков, 77</p>
             </address>
             <section class="main-footer__working-hours  working-hours">
                 <h3 class="main-footer__working-hours-title  working-hours__title">График работы</h3>
@@ -282,12 +292,12 @@
                         <svg class="main-footer__social-link-icon  social__link-icon" width="40" height="40" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#flamp"/>
                         </svg></a>
                 </section>
-                <p class="main-footer__copyright">©2016-2018 Кафе «Лукоморье»</p>
+                <p class="main-footer__copyright">©2015-2018 Кафе «Лукоморье»</p>
             </div>
         </div>
     </footer>
 
-    <div class="page-main__feedback-overlay  visually-hidden">
+    <div class="page-main__feedback-overlay  feedback-overlay  hidden">
         <section class="page-main__feedback  modal-feedback" id="feedback-anchor">
             <h3 class="page-main__feedback-title  modal-feedback__title">Напишите нам</h3>   
             <p>Если у Вас остались вопросы, появились замечания о нашей работе, а также пожелания или предложения - Вы можете написать нам, используя форму ниже.</p>
@@ -301,14 +311,12 @@
                 <label for="feedback-message">Текст сообщения:</label>
                 <textarea class="page-main__feedback-field  modal-feedback__form-field" name="message" id="feedback-message" cols="30" rows="6"></textarea>
                 <button class="page-main__feedback-form-submit  modal-feedback__form-submit" type="submit">Отправить</button>
+                <button class="page-main__feedback-form-close  modal-feedback__form-close" type="reset">
+                    <span class="visually-hidden">Закрыть форму обратной связи</span></button>
             </form>
         </section>
     </div>
     <a href="#page-top" class="to-top"><span class="visually-hidden">Вернуться к началу страницы</span></a>
-
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/form_validate.js"></script>
-
 
     <!-- svg sprite -->
     <svg style="display:none;">
@@ -334,6 +342,9 @@
     </svg>
     <!-- svg sprite end -->
 
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/form_validate.js"></script>
     <script src="js/map.js"></script>
 </body>
 
