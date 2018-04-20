@@ -144,70 +144,49 @@
 
     galleryRightControl.addEventListener("click", function () {
         debugger
-        galleryLeftControl.hasAttribute("disabled")?galleryLeftControl.removeAttribute("disabled"):false;
-        var currIt = document.getElementById("current-img");
-
-        var imgCurrIndex = galleryItems.indexOf(currIt);
-        var imgWidth = currIt.clientWidth;
-        var currTranslateParam = currIt.parentElement.style.transform;
-        var re = /\d{1,}/;
-        var translateNum = 0;
-        if (currTranslateParam !== "") {
-            translateNum = +currTranslateParam.match(re)[0];
-        } 
-        var listWidth = galleryList.clientWidth;
-        var elementsAmount = Math.round(listWidth / imgWidth);
-        var shiftSize = listWidth / elementsAmount;
-        var val = "translateX(" + (-(shiftSize + translateNum)) + "px)";
-        galleryList.style.transform = val;
         galleryList.classList.add("soft-junction");
+        
+        var visibleAreaWidth = galleryListWrap.clientWidth;
+        var slideWidth = galleryItems[0].clientWidth;
+        var amountOfVisibleElems = Math.round(visibleAreaWidth / slideWidth);
+        var step = visibleAreaWidth / amountOfVisibleElems;
+        var maxStep = galleryItems.length * step - visibleAreaWidth;
+        var minStep = 0;
 
-        var currNum = imgCurrIndex + 1;
-        movementOfId(elementsAmount);
-
-        function movementOfId (number) {
-            if (currNum < galleryItems.length - number) {
-                currIt.removeAttribute("id");
-                galleryItems[currNum].setAttribute("id", "current-img");
-            } else {
-                currIt.removeAttribute("id");
-                galleryItems[currNum].setAttribute("id", "current-img");
-                galleryRightControl.setAttribute("disabled", "true");
-            }  
-        }   
+        var re = /\d{1,}/;
+        var currentShift = 0;
+        var currentTranslateValue = galleryList.style.transform;
+        if (currentTranslateValue !== "") {
+            currentShift = +currentTranslateValue.match(re)[0];
+        }
+        if (currentShift < maxStep) {
+            galleryList.style.transform = "translateX(-" + (currentShift + step) + "px)";
+        } else {
+            galleryList.style.transform = "translateX(-" + minStep + "px)";
+        }
     })
 
     galleryLeftControl.addEventListener("click", function () {
-        galleryRightControl.hasAttribute("disabled")?galleryRightControl.removeAttribute("disabled"):false;
-        var currIt = document.getElementById("current-img");
-
-        var imgCurrIndex = galleryItems.indexOf(currIt);
-        var imgWidth = currIt.clientWidth;
-        var currTranslateParam = currIt.parentElement.style.transform;
-        var re = /\d{1,}/;
-        var translateNum = 0;
-        if (currTranslateParam !== "") {
-            translateNum = +currTranslateParam.match(re)[0];
-        } 
-        var listWidth = galleryList.clientWidth;
-        var elementsAmount = Math.round(listWidth / imgWidth);
-        var shiftSize = listWidth / elementsAmount;
-        var val = "translateX(" + (-(translateNum - shiftSize)) + "px)";
-        galleryList.style.transform = val;
+        debugger
         galleryList.classList.add("soft-junction");
+        
+        var visibleAreaWidth = galleryListWrap.clientWidth;
+        var slideWidth = galleryItems[0].clientWidth;
+        var amountOfVisibleElems = Math.round(visibleAreaWidth / slideWidth);
+        var step = visibleAreaWidth / amountOfVisibleElems;
+        var maxStep = galleryItems.length * step - visibleAreaWidth;
+        var minStep = 0;
 
-        var currNum = imgCurrIndex - 1;
-        movementOfId(elementsAmount);
-
-        function movementOfId (number) {
-            if (currNum > 0) {
-                currIt.removeAttribute("id");
-                galleryItems[currNum].setAttribute("id", "current-img");
-            } else {
-                currIt.removeAttribute("id");
-                galleryItems[currNum].setAttribute("id", "current-img");
-                galleryLeftControl.setAttribute("disabled", "true");
-            }  
+        var re = /\d{1,}/;
+        var currentShift = 0;
+        var currentTranslateValue = galleryList.style.transform;
+        if (currentTranslateValue !== "") {
+            currentShift = +currentTranslateValue.match(re)[0];
+        }
+        if (currentShift === 0) {
+            galleryList.style.transform = "translateX(-" + maxStep + "px)";
+        } else {
+            galleryList.style.transform = "translateX(-" + (currentShift - step) + "px)";
         }   
     })
 })();
