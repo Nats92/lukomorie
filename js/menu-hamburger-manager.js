@@ -1,3 +1,5 @@
+"use strict";
+
 (function menuHamburgerManager() {
     var hamburger = document.querySelector(".page-menu__anchors-hamburger");
     var menuList = document.querySelector(".page-menu__anchors-wrap");

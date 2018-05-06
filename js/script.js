@@ -197,18 +197,17 @@ function takeOnlyNumber(val) {
             var fileNameAndExpansion = imgPath.split(".");
             var biggerImgPath = fileNameAndExpansion[0] + "-big." + fileNameAndExpansion[1];
 
+            imgInModal.setAttribute("src", imgPath);
+
             var img = new Image();
             img.src = biggerImgPath;
             img.onload = function() { 
                 imgInModal.setAttribute("src", biggerImgPath);
             };
-            img.onerror = function() { 
-                imgInModal.setAttribute("src", imgPath);
-            };
-
 
             prewievClose.addEventListener("click", function onCloseClick() {
                 previewModal.classList.add("hidden");
+                imgInModal.removeAttribute("src");
                 prewievClose.removeEventListener("click",onCloseClick);
             })
         })
