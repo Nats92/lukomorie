@@ -13,7 +13,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="Кафе Екатеринбург, кафе Эльмаш, кафе Уралмаш, домашняя кухня, русская кухня, европейская кухня, банкеты, салаты, холодные закуски, горячие закуски, горячие блюда из мяса и птицы, горячие рыбные блюда, десерты, чай, кофе">
-    <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/touch-icon.png">
     <title>Форма обратной связи кафе Лукоморье</title>
 
     <link href="https://fonts.googleapis.com/css?family=Ledger&amp;subset=cyrillic" rel="stylesheet">
@@ -24,30 +25,42 @@
         <nav class="main-header__nav  main-nav">
             <div class="main-nav__wrap">
                 <a class="main-nav__logo" href="index.html" id="header-logo"><img src="img/luko-logo-light.png" width="250" height="72" alt="Кафе Лукоморье" ></a>
-                <button class="hidden">Меню</button>
-                <ul class="main-nav__menu-list">
-                    <li><a class="main-nav__link" href="news.html">Новости и акции</a></li>
-                    <li><a class="main-nav__link" href="menu.html">Меню</a></li>
-                    <li><a class="main-nav__link" href="index.html#gallery">Галерея</a></li>
-                    <li><a class="main-nav__link" href="index.html#contacts">Контакты</a></li>
-                </ul>
+                <div class="main-nav__menu-hamburger-wrap  main-nav__menu-hamburger-wrap--dark">
+                    <button class="hamburger  hamburger--light" type="button"><span class="visually-hidden">Меню</span></button>
+                    <ul class="main-nav__menu-list  main-nav__menu-list--dark">
+                        <li><a class="main-nav__link  main-nav__link--index" href="index.html">Главная</a></li>
+                        <li><a class="main-nav__link" href="news.html">Новости и акции</a></li>
+                        <li><a class="main-nav__link" href="menu.html">Меню</a></li>
+                        <li><a class="main-nav__link" href="index.html#gallery">Галерея</a></li>
+                        <li><a class="main-nav__link" href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <h1 class="visually-hidden">Форма обратной связи кафе «Лукоморье»</h1>
-        <section class="modal-feedback">
-            <h3 class="feedback-title  modal-feedback__title">Напишите нам</h3>
-            <p>Если у Вас остались вопросы, появились замечания о нашей работе, а также пожелания или предложения - Вы можете написать нам, используя форму ниже.</p>
-            <form class="modal-feedback__form" action="send.php">
+        <section class="modal-feedback" id="feedback-anchor">
+            <h3 class="modal-feedback__title">Напишите нам</h3>
+            <form class="modal-feedback__form" action="send.php" method="post" autocomplete="off">
                 <label for="feedback-name">Как Вас зовут?</label>
                 <input class="modal-feedback__form-field" type="text" name="name" id="feedback-name" placeholder="Введите имя">
+                <p></p>
+
                 <label for="feedback-tel">Контактный телефон</label>
                 <input class="modal-feedback__form-field" type="tel" name="tel" id="feedback-tel" placeholder="+7-999-999-9999">
+                <p></p>
+
                 <label for="feedback-mail">Адрес эл.почты для ответа</label>
                 <input class="modal-feedback__form-field" type="mail" name="mail" id="feedback-mail" placeholder="example@example.ru">
+                <p></p>
+
+                <input class="hidden" type="text" id="phone-check">
+
                 <label for="feedback-message">Текст сообщения:</label>
-                <textarea class="modal-feedback__form-field" name="message" id="feedback-message" cols="30" rows="6"></textarea>
+                <textarea class="modal-feedback__form-field" name="message" id="feedback-message" cols="30" rows="2"></textarea>
+                <p></p>
+                
                 <button class="modal-feedback__form-submit" type="submit">Отправить</button>
             </form>
         </section>
@@ -133,5 +146,6 @@
     <!-- svg sprite end -->
 
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/form-validate.js"></script>
 </body>
 </html>

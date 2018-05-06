@@ -17,7 +17,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="Кафе Екатеринбург, кафе Эльмаш, кафе Уралмаш, домашняя кухня, русская кухня, европейская кухня, банкеты, салаты, холодные закуски, горячие закуски, горячие блюда из мяса и птицы, горячие рыбные блюда, десерты, чай, кофе">
-    <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/touch-icon.png">
     <title>меню кафе Лукоморье</title>
 
     <link href="https://fonts.googleapis.com/css?family=Ledger&amp;subset=cyrillic" rel="stylesheet">
@@ -28,20 +29,24 @@
         <nav class="main-header__nav  main-nav">
             <div class="main-nav__wrap">
                 <a class="main-nav__logo" href="index.html" id="header-logo"><img src="img/luko-logo.png" width="250" height="72" alt="Кафе Лукоморье" ></a>
-                <button class="hidden">Меню</button>
-                <ul class="main-nav__menu-list">
-                    <li><a class="main-nav__link" href="news.html">Новости и акции</a></li>
-                    <li><a class="main-nav__link" href="menu.html">Меню</a></li>
-                    <li><a class="main-nav__link" href="index.html#gallery">Галерея</a></li>
-                    <li><a class="main-nav__link" href="index.html#contacts">Контакты</a></li>
-                </ul>
+                <div class="main-nav__menu-hamburger-wrap  main-nav__menu-hamburger-wrap--light">
+                    <button class="hamburger  hamburger--dark" type="button"><span class="visually-hidden">Меню</span></button>
+                    <ul class="main-nav__menu-list  main-nav__menu-list--light">
+                        <li><a class="main-nav__link  main-nav__link--index" href="index.html">Главная</a></li>
+                        <li><a class="main-nav__link" href="news.html">Новости и акции</a></li>
+                        <li><a class="main-nav__link" href="menu.html">Меню</a></li>
+                        <li><a class="main-nav__link" href="index.html#gallery">Галерея</a></li>
+                        <li><a class="main-nav__link" href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <h1 class="page-menu__title">Меню кафе «Лукоморье»</h1>
+        <h1 class="page-menu__title  section-title">Меню кафе «Лукоморье»</h1>
         <section class="page-menu__anchors">
+            <button class="page-menu__anchors-hamburger" type="button"><span class="visually-hidden">Кнопка открытия/закрытия меню по разделам</span></button>
             <div class="page-menu__anchors-wrap">
                 <a class="page-menu__anchors-item" href="menu.html#banquet-menu">Банкетное меню</a>
                 <a class="page-menu__anchors-item" href="menu.html#cold-apetizers">Холодные закуски</a>
@@ -59,7 +64,7 @@
         </section>
         <div class="page-menu__menu-wrap" id="banquet-menu">
             <section class="menu-item">
-                <h2 class="menu-item__title">Банкетное меню</h2>
+                <h2 class="menu-item__title  section-title">Банкетное меню</h2>
                 <h3 class="menu-item__subtitle">Торты, выпечка</h3>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
@@ -140,7 +145,7 @@
                 </div>
             </section>
             <section class="menu-item" id="cold-apetizers">
-                <h2 class="menu-item__title">Холодные закуски</h2>
+                <h2 class="menu-item__title  section-title">Холодные закуски</h2>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
                         <h4 class="menu-item__dish-name">Мясные яства из деликатесов собственного приготовления&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">170</span></h4></div>
@@ -213,7 +218,7 @@
                 </div>
             </section>
             <section class="menu-item" id="salads">
-                <h2 class="menu-item__title">Салаты</h2>
+                <h2 class="menu-item__title  section-title">Салаты</h2>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
                         <h4 class="menu-item__dish-name">Салат с ростбифом и свежими овощами&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">250</span></h4></div>
@@ -271,7 +276,7 @@
                 </div>
             </section>
             <section class="menu-item" id="hot-apetizers">
-                <h2 class="menu-item__title">Горячие закуски</h2>
+                <h2 class="menu-item__title  section-title">Горячие закуски</h2>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
                         <h4 class="menu-item__dish-name">Жульен мясной&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">140</span></h4></div>
@@ -324,7 +329,7 @@
                 </div>
             </section>
             <section class="menu-item" id="soups">
-                <h2 class="menu-item__title">Супы</h2>
+                <h2 class="menu-item__title  section-title">Супы</h2>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
                         <h4 class="menu-item__dish-name">Солянка мясная со сметаной&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">250/30</span></h4></div>
@@ -358,7 +363,7 @@
                 </div>
             </section>
             <section class="menu-item" id="hot-fish">
-                <h2 class="menu-item__title">Горячие рыбные блюда</h2>
+                <h2 class="menu-item__title  section-title">Горячие рыбные блюда</h2>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
                         <h4 class="menu-item__dish-name">Филе семги с овощным миксом и голландским соусом&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">300</span></h4></div>
@@ -406,7 +411,7 @@
                 </div>
             </section>
             <section class="menu-item" id="hot-meat">
-                <h2 class="menu-item__title">Горячие блюда из мяса и птицы</h2>
+                <h2 class="menu-item__title  section-title">Горячие блюда из мяса и птицы</h2>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
                         <h4 class="menu-item__dish-name">Жареный телячий язык с картофельными дранниками и соусом&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">300</span></h4></div>
@@ -464,7 +469,7 @@
                 </div>
             </section>
             <section class="menu-item" id="overseas-viands">
-                <h2 class="menu-item__title">Заморские яства</h2>
+                <h2 class="menu-item__title  section-title">Заморские яства</h2>
                 <h3 class="menu-item__subtitle">Паста</h3>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
@@ -535,7 +540,7 @@
                 </div>
             </section>
             <section class="menu-item" id="garnish">
-                <h2 class="menu-item__title">Гарниры</h2>
+                <h2 class="menu-item__title  section-title">Гарниры</h2>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
                         <h4 class="menu-item__dish-name">Картофель разварной&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">150</span></h4></div>
@@ -600,7 +605,7 @@
                 </div>
             </section>
             <section class="menu-item" id="souses">
-                <h2 class="menu-item__title">Соусы</h2>
+                <h2 class="menu-item__title  section-title">Соусы</h2>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
                         <h4 class="menu-item__dish-name">Голландский&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">50</span></h4></div>
@@ -658,7 +663,7 @@
                 </div>
             </section>
             <section class="menu-item" id="desserts">
-                <h2 class="menu-item__title">Десерты</h2>
+                <h2 class="menu-item__title  section-title">Десерты</h2>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
                         <h4 class="menu-item__dish-name">Блинчики&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">100/50</span></h4>
@@ -702,7 +707,7 @@
                 </div>
             </section>
             <section class="menu-item" id="drinks">
-                <h2 class="menu-item__title">Напитки</h2>
+                <h2 class="menu-item__title  section-title">Напитки</h2>
                 <h3 class="menu-item__subtitle">Безалкогольные напитки </h3>
                 <div class="menu-item__menu-line">
                     <div class="menu-item__dish-name-descr-wrap">
@@ -950,16 +955,25 @@
     <div class="page-news__feedback-overlay  feedback-overlay  hidden">
         <section class="page-news__feedback  modal-feedback">
             <h3 class="page-news__feedback-title  modal-feedback__title">Напишите нам</h3>
-            <p>Если у Вас остались вопросы, появились замечания о нашей работе, а также пожелания или предложения - Вы можете написать нам, используя форму ниже.</p>
-            <form class="page-news__feedback-form  modal-feedback__form" action="send.php">
+            <form class="page-news__feedback-form  modal-feedback__form" action="send.php" method="post" autocomplete="off">
                 <label for="feedback-name">Как Вас зовут?</label>
                 <input class="page-news__feedback-field  modal-feedback__form-field" type="text" name="name" id="feedback-name" placeholder="Введите имя">
+                <p></p>
+
                 <label for="feedback-tel">Контактный телефон</label>
                 <input class="page-news__feedback-field  modal-feedback__form-field" type="tel" name="tel" id="feedback-tel" placeholder="+7-999-999-9999">
+                <p></p>
+
                 <label for="feedback-mail">Адрес эл.почты для ответа</label>
                 <input class="page-news__feedback-field  modal-feedback__form-field" type="mail" name="mail" id="feedback-mail" placeholder="example@example.ru">
+                <p></p>
+
+                <input class="hidden" type="text" id="phone-check">
+
                 <label for="feedback-message">Текст сообщения:</label>
-                <textarea class="page-news__feedback-field  modal-feedback__form-field" name="message" id="feedback-message" cols="30" rows="6"></textarea>
+                <textarea class="page-news__feedback-field  modal-feedback__form-field" name="message" id="feedback-message" cols="30" rows="2"></textarea>
+                <p></p>
+                
                 <button class="page-news__feedback-form-submit  modal-feedback__form-submit" type="submit">Отправить</button>
                 <button class="page-news__feedback-form-close  modal-feedback__form-close" type="reset">
                     <span class="visually-hidden">Закрыть форму обратной связи</span></button>
@@ -994,6 +1008,7 @@
 
 
     <script type="text/javascript" src="js/script.js"></script>
-    <script type='text/javascript' src='script.js'></script>
+    <script type="text/javascript" src="js/form-validate.js"></script>
+    <script type="text/javascript" src="js/menu-hamburger-manager.js"></script>
 </body>
 </html>
