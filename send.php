@@ -1,9 +1,9 @@
 <?php
-  $name = htmlspecialchars(urldecode(trim($_POST['name'])));
-  $phone = htmlspecialchars(urldecode(trim($_POST['mobile-phone'])));
-  $message = htmlspecialchars(urldecode(trim($_POST['message'])));
-  $mail = trim($_POST['mail']);
-  $check = htmlspecialchars(urldecode(trim($_POST['phone'])));
+  $name = htmlspecialchars(urldecode(trim($_POST['feedback-name'])));
+  $phone = htmlspecialchars(urldecode(trim($_POST['feedback-tel'])));
+  $message = htmlspecialchars(urldecode(trim($_POST['feedback-message'])));
+  $mail = trim($_POST['feedback-mail']);
+  $check = htmlspecialchars(urldecode(trim($_POST['phone-check'])));
 
   $subject = '=?utf-8?B?'.base64_encode('Сообщение из формы сайта').'?=';
   $to = 'kafe@lukomorie96.ru';
