@@ -1547,6 +1547,9 @@ body  {
 
         color: #000;
     }
+.modal-feedback__form-field + p {
+    margin: 0;
+}
 .modal-feedback__form-submit {
     display: inline-block;
     padding: 10px 20px;
@@ -1640,8 +1643,10 @@ textarea.modal-feedback__form-field {
     min-height: 200px;
 }
 .modal-feedback__error {
-  font-size: 15px;
-  color: red;
+    margin: 2px 0;
+
+    font-size: 15px;
+    color: red;
 }
 .modal-feedback__invalid-field {
     background-color: rgba(255, 114, 114, .8);
@@ -2164,9 +2169,26 @@ textarea.modal-feedback__form-field {
     color: #ffd8c6;
 }
 /* page write-us end */
-.modal-feedback__form-field + p {
-    margin: 0;
+.thanx-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    min-height: 100vh;
 }
+.thanx-page .main-header {
+    width: 100%;
+}
+.thanx-page__title {
+    max-width: 1200px;
+    padding: 20px;
+    
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+}
+
 
 
 @media all and (max-width: 1200px) {

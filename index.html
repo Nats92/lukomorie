@@ -332,21 +332,21 @@
             <h3 class="page-main__feedback-title  modal-feedback__title">Напишите нам</h3>
             <form class="page-main__feedback-form  modal-feedback__form" action="send.php" method="post" autocomplete="off">
                 <label for="feedback-name">Как Вас зовут?</label>
-                <input class="page-main__feedback-field  modal-feedback__form-field" type="text" name="name" id="feedback-name" placeholder="Введите имя">
+                <input class="page-main__feedback-field  modal-feedback__form-field" type="text" name="feedback-name" id="feedback-name" placeholder="Введите имя">
                 <p></p>
 
                 <label for="feedback-tel">Контактный телефон</label>
-                <input class="page-main__feedback-field  modal-feedback__form-field" type="tel" name="tel" id="feedback-tel" placeholder="+7-999-999-9999">
+                <input class="page-main__feedback-field  modal-feedback__form-field" type="tel" name="feedback-tel" id="feedback-tel" placeholder="+7-999-999-9999">
                 <p></p>
 
                 <label for="feedback-mail">Адрес эл.почты для ответа</label>
-                <input class="page-main__feedback-field  modal-feedback__form-field" type="mail" name="mail" id="feedback-mail" placeholder="example@example.ru">
+                <input class="page-main__feedback-field  modal-feedback__form-field" type="mail" name="feedback-mail" id="feedback-mail" placeholder="example@example.ru">
                 <p></p>
 
-                <input class="hidden" type="text" id="phone-check">
+                <input class="hidden" type="text" name="phone-check" id="phone-check">
 
                 <label for="feedback-message">Текст сообщения:</label>
-                <textarea class="page-main__feedback-field  modal-feedback__form-field" name="message" id="feedback-message" cols="30" rows="2"></textarea>
+                <textarea class="page-main__feedback-field  modal-feedback__form-field" name="feedback-message" id="feedback-message" cols="30" rows="2"></textarea>
                 <p></p>
 
                 <button class="page-main__feedback-form-submit  modal-feedback__form-submit" type="submit">Отправить</button>
