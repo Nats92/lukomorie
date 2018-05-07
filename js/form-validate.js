@@ -153,41 +153,48 @@ function onValidate () {
 function addHandlers () {
     contactForm.addEventListener("input", onValidate);
     submit.addEventListener("click", function(evt) {
-        debugger
         var name = new Validation(formFields.nameField, 3);
-
         name.checkName();
         name.stopSubmit();
 
         var phone = new Validation(formFields.phoneField, 11);
-
         phone.checkPhone();
         phone.stopSubmit();
 
         var mail = new Validation(formFields.mailField);
-
         mail.checkMail();
         mail.stopSubmit();
 
         var message = new Validation(formFields.messageField, 15);
-
         message.checkMessage();
         message.stopSubmit();
 
         if (validities.length === 0 && formFields.spamCheckField.value === "") {
             contactForm.submit();
-            contactForm.reset();
-            alert("Сообщение успешно отправлено");
         } else {
             evt.preventDefault();        
         }
-
-
-        var closeBut = contactForm.querySelector(".modal-feedback__form-close");
-
-
-        validities = [];
+    validities = [];
     });
+
+    var closeForm = document.querySelector(".modal-feedback__form-close");
+    closeForm.addEventListener("click", function() {
+        var name = new Validation(formFields.nameField, 3);
+        name.cleanErrorMessage();
+        name.colorizeValid();
+
+        var phone = new Validation(formFields.phoneField, 11);
+        phone.cleanErrorMessage();
+        phone.colorizeValid();
+
+        var mail = new Validation(formFields.mailField);
+        mail.cleanErrorMessage();
+        mail.colorizeValid();
+
+        var message = new Validation(formFields.messageField, 15);
+        message.cleanErrorMessage();
+        message.colorizeValid();
+    })
 }
 
 addHandlers();
