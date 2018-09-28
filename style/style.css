@@ -1788,6 +1788,13 @@ textarea.modal-feedback__form-field {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
+.news-list__item-footnote {
+    display: block;
+    
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+}
 .news-list__item-title {
     width: 100%;
     margin: 0;
