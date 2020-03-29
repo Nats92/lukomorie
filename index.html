@@ -44,6 +44,20 @@
     </header>
     <main class="main-content">
         <h1 class="visually-hidden">Главная страница кафе «Лукоморье»</h1>
+        <div class="delivery-banner visually-hidden" id="delivery">
+            <section class="delivery-banner__inner">
+                <h2>Мы открываем доставку!</h2>
+                <button class="delivery-banner__close" id="delivery-close" type="button"><span class="visually-hidden">Закрыть информацио о даставке</span></button>
+                <p>Вы можете заказать:</p>
+                <ul>
+                    <li>Бизнес-ланч</li>
+                    <li>Блюда из основного меню</li>
+                    <li>Банкет*</li>
+                </ul>
+                <p>Доставка <b>бесплатно</b></p>
+                <p class="delivery-banner__additional">*При заказе банкета, мы поможем Вам определиться с выбором блюд, их количеством, а также привезем и оформим блюда на Вашем столе!</p>
+            </section>
+        </div>
         <section class="main-content__news" id="news">
         <div class="main-content__news-darker-bg">
             <div class="main-content__news-preview-overlay  hidden">
@@ -67,19 +81,14 @@
                     <div class="main-content__news-list-wrap">
                         <div class="main-content__news-list">
                             <article class="main-content__news-item">
-                                <img class="main-content__news-item-img" src="img/NY.jpg" width="380" height="278" alt="Новогодние украшения">
+                                <img class="main-content__news-item-img" src="img/new.png" width="380" height="265" alt="Мы открываем доставку!">
                                 <div class="main-content__news-item-text-block">
-                                    <a class="main-content__news-item-title" href="news.html#office-party2020"><h3>Новогодние корпоративы</h3></a>
-                                    <p class="main-content__news-item-text">
-                                        Дорогие гости!<br>
-                                        Приближается чудесная предновогодняя пора. И мы приглашаем Вас провести Новогодний корпоратив в нашем уютном кафе. <br>
-                                        Даты: с 20 по 30 декабря* включительно. <br>
-                                        Стоимость 2400 руб. с человека.
-                                        <a href="menu.html#office-party" target="_blank">Нажмите сюда, чтобы ознакомиться с Новогодним меню</a><br><br>
-                                        * Количество мест ограничено. Наличие свободных дат уточняйте по телефону <a href="tel:+73433720201">+7 343 372 02 01.</a><br>
-                                        </p>
+                                    <a class="main-content__news-item-title" href="news.html#delivery"><h3>Мы открываем доставку!</h3></a>
+                                    <p class="main-content__news-item-text">Вы можете заказать: Бизнес-ланч, Блюда из основного меню, Банкет*</p>
+                                    <p>Доставка <b>бесплатно</b></p>
+                                    <span class="news-list__item-footnote">*При заказе банкета, мы поможем Вам определиться с выбором блюд, их количеством, а также привезем и оформим блюда на Вашем столе!</span>
+                                    <time class="news-list__item-date" datetime="2020-03-29">29 марта 2020</time>
                                     <button class="main-content__news-item-read-more  hidden" type="button">читать полностью</button>
-                                    <time datetime="2018-09-28">18 сентября 2019</time>
                                 </div></article>
                             <article class="main-content__news-item">
                                 <img class="main-content__news-item-img" src="img/lunch.png" width="380" height="265" alt="Изображение печати на карточке бизнес-ланча">

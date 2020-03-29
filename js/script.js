@@ -33,19 +33,19 @@
         } else {
             hideMenu(menuList);
         }
-    })
+    });
     window.addEventListener("resize", function() {
         if (menuList.classList.contains("dis-block")) {
             hideMenu(menuList);
         }
-    })
+    });
     window.addEventListener("scroll", function() {
         if ((window.pageYOffset > 50) && (menuList.clientWidth <= 240)) {
-            menuHambWrap.classList.add("pos-fixed");    
+            menuHambWrap.classList.add("pos-fixed");
         } else {
             menuHambWrap.classList.remove("pos-fixed");
         }
-    })
+    });
     navLinks.forEach( function(link) {
         link.addEventListener("click", function() {
             hideMenu(menuList);
@@ -64,7 +64,7 @@
         var scr = setInterval(function () {
             top -= step;
             window.scrollTo(0, top);
-            
+
             if (top < 20) {
                 clearInterval(scr);
             }
@@ -91,8 +91,8 @@ function takeOnlyNumber(val) {
         var newsText = newsTextBox.innerText;
         var textLength = newsText.length;
 
-        if (textLength > 200) { 
-            var newsInnerHtml = newsTextBox.innerHTML;  
+        if (textLength > 200) {
+            var newsInnerHtml = newsTextBox.innerHTML;
             var shorterText = newsText.substr(0, symbolsCount);
             var spaceIndex = shorterText.lastIndexOf(" ");
             var cutOffText = shorterText.substr(0, spaceIndex);
@@ -134,7 +134,7 @@ function takeOnlyNumber(val) {
                 })
             })
         }
-    })    
+    })
 })();
 
 (function newsManager() {
@@ -149,7 +149,7 @@ function takeOnlyNumber(val) {
 
     window.addEventListener("resize", function() {
         newsList.style.transform = "translateX(0)";
-    })
+    });
 
     arrowRight.addEventListener("click", function() {
         var itemWidth = newsItems[0].clientWidth;
@@ -165,7 +165,7 @@ function takeOnlyNumber(val) {
         } else {
             newsList.style.transform = "translateX(-" + minStep + "px)";
         }
-    })
+    });
 
     arrowLeft.addEventListener("click", function() {
         var itemWidth = newsItems[0].clientWidth;
@@ -201,7 +201,7 @@ function takeOnlyNumber(val) {
 
             var img = new Image();
             img.src = biggerImgPath;
-            img.onload = function() { 
+            img.onload = function() {
                 imgInModal.setAttribute("src", biggerImgPath);
             };
 
@@ -214,7 +214,7 @@ function takeOnlyNumber(val) {
     });
 
     var galleryLeftControl = galleryBlock.querySelector(".main-content__gallery-slider-control--left");
-    var galleryRightControl = galleryBlock.querySelector(".main-content__gallery-slider-control--right");  
+    var galleryRightControl = galleryBlock.querySelector(".main-content__gallery-slider-control--right");
     var galleryListWrap = (galleryBlock.querySelector(".main-content__gallery-slider-list-wrap"));
     var galleryList = (galleryBlock.querySelector(".main-content__gallery-slider-list"));
 
@@ -222,10 +222,10 @@ function takeOnlyNumber(val) {
 
     window.addEventListener("resize", function() {
         galleryList.style.transform = "translateX(0)";
-    })
+    });
 
     galleryRightControl.addEventListener("click", function () {
-    
+
         var visibleAreaWidth = galleryListWrap.clientWidth;
         var slideWidth = galleryItems[0].clientWidth;
         var amountOfVisibleElems = Math.round(visibleAreaWidth / slideWidth);
@@ -240,7 +240,7 @@ function takeOnlyNumber(val) {
         } else {
             galleryList.style.transform = "translateX(-" + minStep + "px)";
         }
-    })
+    });
 
     galleryLeftControl.addEventListener("click", function () {
         var visibleAreaWidth = galleryListWrap.clientWidth;
@@ -256,7 +256,23 @@ function takeOnlyNumber(val) {
             galleryList.style.transform = "translateX(-" + maxStep + "px)";
         } else {
             galleryList.style.transform = "translateX(-" + (currentShift - step) + "px)";
-        }   
+        }
+    })
+})();
+
+(function deliveryBanner() {
+    window.addEventListener('load', function () {
+        var alreadySet = sessionStorage.getItem('delivery');
+        if (alreadySet) { return; }
+        var delivery = document.getElementById('delivery');
+        delivery.classList.remove('visually-hidden');
+        var close = document.getElementById('delivery-close');
+        var closeDelivery = function () {
+            delivery.classList.add('visually-hidden');
+            sessionStorage.setItem('delivery', 'setted');
+            close.removeEventListener('click', closeDelivery);
+        };
+        close.addEventListener('click', closeDelivery);
     })
 })();
 
