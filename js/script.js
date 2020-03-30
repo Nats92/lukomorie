@@ -2,7 +2,7 @@
 
 (function modalManager() {
     var modalOverlay = document.querySelector(".feedback-overlay");
-    var writeUsBut = document.querySelector(".write-us");
+    var writeUsBut = document.getElementById("write-us");
     var closeModal = document.querySelector(".modal-feedback__form-close");
 
     writeUsBut.addEventListener("click", function(evt) {
@@ -273,6 +273,22 @@ function takeOnlyNumber(val) {
             close.removeEventListener('click', closeDelivery);
         };
         close.addEventListener('click', closeDelivery);
+    })
+})();
+
+(function delivery() {
+    var deliveryBtn = document.getElementById('open-delivery');
+    var delivery = document.querySelector('.business-lunch__delivery');
+    var content = document.getElementById('content');
+    deliveryBtn.addEventListener('click', function () {
+        delivery.classList.remove('hidden');
+        content.classList.add('hidden');
+
+        var closeBtn = document.getElementById('delivery-bz-close');
+        closeBtn.addEventListener('click', function() {
+            delivery.classList.add('hidden');
+            content.classList.remove('hidden');
+        })
     })
 })();
 
