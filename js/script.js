@@ -2,7 +2,7 @@
 
 (function modalManager() {
     var modalOverlay = document.querySelector(".feedback-overlay");
-    var writeUsBut = document.getElementById("write-us");
+    var writeUsBut = document.querySelector(".write-us");
     var closeModal = document.querySelector(".modal-feedback__form-close");
 
     writeUsBut.addEventListener("click", function(evt) {
@@ -259,37 +259,3 @@ function takeOnlyNumber(val) {
         }
     })
 })();
-
-(function deliveryBanner() {
-    window.addEventListener('load', function () {
-        var alreadySet = sessionStorage.getItem('delivery');
-        if (alreadySet) { return; }
-        var delivery = document.getElementById('delivery');
-        delivery.classList.remove('visually-hidden');
-        var close = document.getElementById('delivery-close');
-        var closeDelivery = function () {
-            delivery.classList.add('visually-hidden');
-            sessionStorage.setItem('delivery', 'setted');
-            close.removeEventListener('click', closeDelivery);
-        };
-        close.addEventListener('click', closeDelivery);
-    })
-})();
-
-(function delivery() {
-    var deliveryBtn = document.getElementById('open-delivery');
-    var delivery = document.querySelector('.business-lunch__delivery');
-    var content = document.getElementById('content');
-    deliveryBtn.addEventListener('click', function () {
-        delivery.classList.remove('hidden');
-        content.classList.add('hidden');
-
-        var closeBtn = document.getElementById('delivery-bz-close');
-        closeBtn.addEventListener('click', function() {
-            delivery.classList.add('hidden');
-            content.classList.remove('hidden');
-        })
-    })
-})();
-
-
