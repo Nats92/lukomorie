@@ -83,6 +83,7 @@ function takeOnlyNumber(val) {
 
 (function mainNewsLengthManager() {
     var newsSlider = document.querySelector(".main-content__news-slider-wrap");
+    if (!newsSlider) { return; }
     var newsItems = Array.prototype.slice.call(newsSlider.querySelectorAll(".main-content__news-item"));
     var symbolsCount = 200;
 

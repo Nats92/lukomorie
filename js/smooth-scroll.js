@@ -11,6 +11,7 @@
             var hrefVal = currLink.getAttribute("href").substr(1, hrefValLength);
 
             var correspondingSection = document.querySelector("#" + hrefVal);
+            if (!correspondingSection) { return; }
             var sectionOffset = correspondingSection.offsetTop;
 
             var top = 0;
@@ -22,7 +23,7 @@
                     top = sectionOffset;
                 }
                 window.scrollTo(0, top);
-                
+
                 if (top === sectionOffset) {
                     clearInterval(scr);
                 }
