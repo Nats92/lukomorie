@@ -25,43 +25,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body class="page-main" id="page-top">
-    <div class="business-lunch__delivery hidden">
-        <h2>Заказать бизнес-ланч с доставкой</h2>
-        <p>
-            Для того, чтобы оформить заказ на бизнес-ланч, ознакомьтесь с меню, а затем позвоните нам по телефону
-            <a class="contacts__general-contact-item  contact-item" href="tel:+73433720201" aria-label="Номер телефона">
-                <svg class="contacts__general-contact-item-icon  contact-item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 473.806 473.806" width="30" height="30">
-                    <use xlink:href="#phone"/></svg>
-                <span class="contacts__general-contact-item-content  contact-item__content">+7 (343) 372-02-01</span></a>
-            либо отправьте заказ через форму обратной связи
-        </p>
-        <img src="img/bz-lunch.png" alt="Меню бизнес ланча">
-        <span class="news-list__item-footnote">Вы также можете оформить доставку блюд из основного меню, с которым можно ознакомиться <a href="menu.html">здесь</a></span>
-        <form class="modal-feedback__form" action="send.php" method="post" autocomplete="off">
-            <button class="delivery-banner__close" id="delivery-bz-close" type="reset"><span class="visually-hidden">Закрыть информацио о даставке</span></button>
-            <label for="feedback-name">Как Вас зовут?</label>
-            <input class="modal-feedback__form-field" type="text" name="name" id="feedback-name" placeholder="Введите имя">
-            <p></p>
-
-            <label for="feedback-tel">Контактный телефон</label>
-            <input class="modal-feedback__form-field" type="tel" name="tel" id="feedback-tel" placeholder="+7-999-999-9999">
-            <p></p>
-
-            <label for="feedback-mail">Адрес эл.почты для ответа</label>
-            <input class="modal-feedback__form-field" type="mail" name="mail" id="feedback-mail" placeholder="example@example.ru">
-            <p></p>
-
-            <input class="hidden" type="text" id="phone-check">
-
-            <label for="feedback-message">Текст сообщения:</label>
-            <textarea class="modal-feedback__form-field" name="message" id="feedback-message" cols="30" rows="2"></textarea>
-            <p></p>
-
-            <button class="modal-feedback__form-submit" type="submit">Отправить</button>
-        </form>
-    </div>
     <div id="content">
-        <button class="order-business-lunch-button write-us" id="open-delivery">Заказать с доставкой</button>
         <header class="main-header">
             <nav class="main-header__nav  main-nav">
                 <div class="main-nav__wrap">
