@@ -479,5 +479,133 @@ const mainMenu = [
         price: 190,
       },
     ],
+  },
+  {
+    id: 'garnish',
+    groupName: 'Гарниры',
+    dishes: [
+      {
+        name: 'Картофель разварной',
+        weight: 150,
+        price: 80,
+      },
+      {
+        name: 'Картофель фри',
+        weight: 150,
+        price: 140,
+      },
+      {
+        name: 'Картофель по-деревенски',
+        weight: 150,
+        price: 140,
+      },
+      {
+        name: 'Драники из картофеля',
+        weight: 150,
+        price: 150,
+      },
+      {
+        name: 'Картофель жареный с грибами',
+        weight: 150,
+        price: 190,
+      },
+      {
+        name: 'Овощи гриль',
+        weight: 150,
+        price: 250,
+      },
+      {
+        name: 'Фасоль стручковая с томатами',
+        weight: 150,
+        price: 130,
+      },
+      {
+        name: 'Капуста цветная, брокколи',
+        weight: 150,
+        price: 130,
+      },
+      {
+        name: 'Рис припущенный',
+        weight: 150,
+        price: 80,
+      },
+      {
+        name: 'Греча с грибами',
+        weight: 200,
+        price: 190,
+      },
+    ],
+  },
+  {
+    id: 'souses',
+    groupName: 'Соусы',
+    dishes: [
+      {
+        name: 'Голландский',
+        weight: 50,
+        price: 50,
+      },
+      {
+        name: 'Соус из свежих трав',
+        weight: 50,
+        price: 40,
+      },
+      {
+        name: 'Томатный острый',
+        weight: 50,
+        price: 40,
+      },
+      {
+        name: 'Хрен сливочный',
+        weight: 50,
+        price: 50,
+      },
+      {
+        name: 'Горчица',
+        weight: 50,
+        price: 30,
+      },
+      {
+        name: 'Сметанный с чесноком и зеленью',
+        weight: 50,
+        price: 40,
+      },
+      {
+        name: 'Медово-горчичный',
+        weight: 50,
+        price: 50,
+      },
+      {
+        name: 'Гранатовый',
+        weight: 50,
+        price: 50,
+      },
+      {
+        name: 'Майонез',
+        weight: 50,
+        price: 30,
+      },
+      {
+        name: 'Кетчуп',
+        weight: 50,
+        price: 40,
+      },
+      {
+        name: 'Кисло-сладкий',
+        weight: 50,
+        price: 40,
+      },
+    ],
   }
 ];
+
+
+
+
+
+
+
+
+
+
+
