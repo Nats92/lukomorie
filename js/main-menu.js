@@ -154,7 +154,7 @@ const mainMenu = [
     ],
   },
   {
-    id: 'hot-apetizers'
+    id: 'hot-apetizers',
     groupName: 'Горячие закуски',
     dishes: [
       {
@@ -594,6 +594,48 @@ const mainMenu = [
         name: 'Кисло-сладкий',
         weight: 50,
         price: 40,
+      },
+    ],
+  },
+  {
+    id:'desserts',
+    groupName: 'Десерты',
+    dishes: [
+      {
+        name: 'Блинчики',
+        weight: 150,
+        price: 100,
+        description:'c медом, c вареньем, cо cметаной, cо сгущеным молоком\n',
+      },
+      {
+        name: 'Жареные бананы с мороженым и шоколадом',
+        weight: 200,
+        price: 170,
+      },
+      {
+        name: 'Торт Фантазия',
+        weight: 150,
+        price: 190,
+      },
+      {
+        name: 'Фруктовая тарелка',
+        weight: 500,
+        price: 350,
+      },
+      {
+        name: 'Малиновый тар-тар',
+        weight: 200,
+        price: 290,
+      },
+      {
+        name: 'Штрудель яблочный с ванильным соусом и мороженым',
+        weight: 200,
+        price: 190,
+      },
+      {
+        name: 'Мороженое в ассортименте',
+        weight: 50,
+        price: 55,
       },
     ],
   }
