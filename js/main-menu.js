@@ -1,5 +1,3 @@
-'use strict';
-
 const mainMenu = [
   {
     id:'cold-apetizers',
@@ -797,13 +795,4 @@ const mainMenu = [
   }
 ];
 
-
-
-
-
-
-
-
-
-
-
+export {mainMenu};
