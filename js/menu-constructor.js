@@ -17,26 +17,22 @@ const renderSectionMenu = (menuObject) => {
 const renderDishes = (section, data) => {
     data.dishes.forEach((element) => {
         if (element.subTitle) {
-            const subTitle = document.createElement('h3');
-            subTitle.classList.add('menu-item__subtitle');
-            subTitle.textContent = element.subTitle;
-            section.appendChild(subTitle);
+            section.innerHTML += `<h3 class="menu-item__subtitle">${element.subTitle}</h3>`;
         } else {
-            const menuItem = document.createElement('div');
-            menuItem.classList.add('menu-item__menu-line');
-
             if (element.description) {
-                menuItem.innerHTML = `<div class="menu-item__dish-name-descr-wrap">
+                section.innerHTML += `<div class="menu-item__menu-line">
+        <div class="menu-item__dish-name-descr-wrap">
           <h4 class="menu-item__dish-name">${element.name}&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">${element.weight}</span></h4>
           <span class="menu-item__dish-name-descr">${element.description}</span></div>
-        <span class="menu-item__dish-price" aria-label="цена в рублях">${element.price}</span>`;
-                section.appendChild(menuItem);
+        <span class="menu-item__dish-price" aria-label="цена в рублях">${element.price}</span>
+      </div>`;
             } else {
-                menuItem.innerHTML = `<div class="menu-item__dish-name-descr-wrap">
+                section.innerHTML += `<div class="menu-item__menu-line">
+        <div class="menu-item__dish-name-descr-wrap">
           <h4 class="menu-item__dish-name">${element.name}&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">${element.weight}</span></h4>
-          </div>
-        <span class="menu-item__dish-price" aria-label="цена в рублях">${element.price}</span>`;
-                section.appendChild(menuItem);
+        </div>
+        <span class="menu-item__dish-price" aria-label="цена в рублях">${element.price}</span>
+      </div>`;
             }
         }
     });
