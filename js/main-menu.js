@@ -1,6 +1,7 @@
 const mainMenu = [
   {
     id:'cold-apetizers',
+    image:'img/meat.jpg',
     groupName: 'Холодные закуски',
     dishes:[
       {
@@ -77,6 +78,7 @@ const mainMenu = [
   },
   {
     id: 'salads',
+    image:'img/salads.jpg',
     groupName: 'Салаты',
     dishes: [
       {
@@ -153,6 +155,7 @@ const mainMenu = [
   },
   {
     id: 'hot-apetizers',
+    image:'img/hot.jpg',
     groupName: 'Горячие закуски',
     dishes: [
       {
@@ -209,6 +212,7 @@ const mainMenu = [
   },
   {
     id: 'soups',
+    image:'img/soup.jpg',
     groupName: 'Супы',
     dishes: [
       {
@@ -263,6 +267,7 @@ const mainMenu = [
   },
   {
     id: 'hot-meat',
+    image:'img/hot-meat.jpg',
     groupName: 'Горячие блюда из мяса и птицы',
     dishes: [
       {
@@ -339,6 +344,7 @@ const mainMenu = [
   },
   {
     id: 'hot-fish',
+    image:'img/hot-fish.jpg',
     groupName: 'Горячие рыбные блюда',
     dishes: [
       {
@@ -395,6 +401,7 @@ const mainMenu = [
   },
   {
     id: 'overseas-viands',
+    image:'img/pizza.jpg',
     groupName: 'Заморские яства',
     dishes: [
       {
@@ -480,6 +487,7 @@ const mainMenu = [
   },
   {
     id: 'garnish',
+    image:'img/garnish.jpg',
     groupName: 'Гарниры',
     dishes: [
       {
@@ -536,6 +544,7 @@ const mainMenu = [
   },
   {
     id: 'souses',
+    image:'img/souse.jpg',
     groupName: 'Соусы',
     dishes: [
       {
@@ -597,6 +606,7 @@ const mainMenu = [
   },
   {
     id:'desserts',
+    image:'img/desserts.jpg',
     groupName: 'Десерты',
     dishes: [
       {
@@ -639,6 +649,7 @@ const mainMenu = [
   },
   {
     id: 'drinks',
+    image:'img/drinks.jpg',
     groupName: 'Напитки',
     dishes: [
       {
