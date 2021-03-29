@@ -17,24 +17,38 @@ const renderDishes = (section, data) => {
   data.dishes.forEach((element) => {
     if (element.subTitle) {
       section.innerHTML += `<h3 class="menu-item__subtitle">${element.subTitle}</h3>`;
-    } else {
-      if (element.description) {
-          section.innerHTML +=
-            `<div class="menu-item__menu-line">
-              <div class="menu-item__dish-name-descr-wrap">
-                <h4 class="menu-item__dish-name">${element.name}&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">${element.weight}</span></h4>
-                <span class="menu-item__dish-name-descr">${element.description}</span></div>
-              <span class="menu-item__dish-price" aria-label="цена в рублях">${element.price}</span>
-            </div>`;
-    } else {
-          section.innerHTML +=
-            `<div class="menu-item__menu-line">
-              <div class="menu-item__dish-name-descr-wrap">
-                <h4 class="menu-item__dish-name">${element.name}&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">${element.weight}</span></h4>
+    } else if (element.description && element.unit === 'мл') {
+      section.innerHTML +=
+        `<div class="menu-item__menu-line">
+            <div class="menu-item__dish-name-descr-wrap">
+              <h4 class="menu-item__dish-name">${element.name}&nbsp<span class="menu-item__dish-weight-ml" aria-label="выход напитка в миллилитрах">${element.weight}</span></h4>
+              <span class="menu-item__dish-name-descr">${element.description}</span></div>
+            <span class="menu-item__dish-price" aria-label="цена в рублях">${element.price}</span>
+          </div>`;
+    } else if (element.description) {
+      section.innerHTML +=
+        `<div class="menu-item__menu-line">
+            <div class="menu-item__dish-name-descr-wrap">
+              <h4 class="menu-item__dish-name">${element.name}&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">${element.weight}</span></h4>
+              <span class="menu-item__dish-name-descr">${element.description}</span></div>
+            <span class="menu-item__dish-price" aria-label="цена в рублях">${element.price}</span>
+          </div>`;
+    } else if (element.unit === 'мл') {
+      section.innerHTML +=
+        `<div class="menu-item__menu-line">
+            <div class="menu-item__dish-name-descr-wrap">
+              <h4 class="menu-item__dish-name">${element.name}&nbsp<span class="menu-item__dish-weight-ml" aria-label="выход напитка в миллилитрах">${element.weight}</span></h4>
               </div>
-              <span class="menu-item__dish-price" aria-label="цена в рублях">${element.price}</span>
-            </div>`;}
-    }
+            <span class="menu-item__dish-price" aria-label="цена в рублях">${element.price}</span>
+          </div>`;
+    } else {
+      section.innerHTML +=
+        `<div class="menu-item__menu-line">
+          <div class="menu-item__dish-name-descr-wrap">
+            <h4 class="menu-item__dish-name">${element.name}&nbsp<span class="menu-item__dish-weight" aria-label="выход блюда в граммах">${element.weight}</span></h4>
+          </div>
+          <span class="menu-item__dish-price" aria-label="цена в рублях">${element.price}</span>
+        </div>`;}
   });
 };
 
